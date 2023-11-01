@@ -1995,7 +1995,8 @@ $.extend(Magnify.prototype, {
   }
 
   // Bad eval to preven google closure to remove it from code o_O
-  eval('IE = "v"=="\v"');
+  eval2 = eval;
+  eval2('IE = "v"=="\v"');
 
   jQuery.fn.extend({
     rotate: function(parameters) {
